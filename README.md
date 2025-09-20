@@ -1,2 +1,2 @@
 # E444-F2025-PRA2
-Lab 2
+This repo is a clone of [https://github.com/miguelgrinberg/flasky](https://github.com/miguelgrinberg/flasky).
