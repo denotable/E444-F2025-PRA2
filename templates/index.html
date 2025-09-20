@@ -4,14 +4,14 @@
 {% block title %}Flasky{% endblock %}
 
 {% block page_content %}
-<div class="page-header">
-    <h1>Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
-    {% if email_message %}
-        <h1>{{ email_message }}</h1>
-    {% endif %}
+<div class="mb-2">
+  <h1 class="mb-0">Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
+  {% if email_message %}
+    <h1 class="mt-0 mb-0">{{ email_message }}</h1>
+  {% endif %}
 </div>
+
+<hr class="mt-2 mb-4 border-0 border-top border-secondary-subtle">
 
 {{ render_form(form, action=url_for('index'), method='post') }}
 {% endblock %}
-
-
